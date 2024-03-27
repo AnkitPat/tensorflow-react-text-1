@@ -1,6 +1,37 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: lightgray;
+  display: flex;
 }
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+  .textarea {
+    outline: none;
+  min-width: 300px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+  }
+
+  .toxic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 .App-logo {
   height: 40vmin;
